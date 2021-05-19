@@ -268,6 +268,8 @@ target_link_libraries(ot-config INTERFACE -lc)
 # Include OpenThread headers
 zephyr_system_include_directories(../include)
 zephyr_system_include_directories(../examples/platforms)
+zephyr_system_include_directories(../src)
+zephyr_system_include_directories(../src/core)
 
 # Determine which libs should be linked in
 set(ot_libs "")
